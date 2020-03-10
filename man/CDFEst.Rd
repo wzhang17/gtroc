@@ -9,3 +9,4 @@ CDFEst(Xgroup, Mvec, pi0, pi1, K, lambda)
 \description{
 estimate the distribution function in the diseased (case) and non-disease (control) population
 }
+
