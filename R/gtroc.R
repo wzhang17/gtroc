@@ -10,7 +10,20 @@
 #'  classiffication errors. The method is exemplified with data from the National Health and Nutrition
 #'  Examination Survey study to estimate the distribution and diagnostic accuracy of C-reactive protein in
 #'  blood samples in predicting chlamydia incidence.
-
+#' @return None
+#'
+#' @examples
+#' plot_crayons()
+#'
+#' @export
+#' #' @details
+#' This is a ...
+#' @author Karl W Broman, \email{broman@@wisc.edu}
+#' @references \url{https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors}
+#' @seealso \code{\link{brocolors}}
+#' @keywords hplot
+#' ...
+#' @importFrom
 
 ###############################################################
 #### source the main functions
@@ -80,7 +93,7 @@ gtroc<-function( pi0 = 0.9,
 ################## Estimate the AUC
   AUC.value <- integrate(ROCEst, 0, 1, subdivisions=5000, F0.val=F0.val, F1.val=F1.val)$value
   ROCAOC<- list(ROC.value, AUC.value)
-
+  return(ROCAOC)
 }
 
 
