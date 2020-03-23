@@ -1,0 +1,18 @@
+Package: gtroc
+Title: A Group-Tested Nonparametric Estimation of Diagnostic Accuracy
+Version: 0.1.0
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: A nonparametric method to estimate the distribution of the biomarker given the disease status, and to make further inference such as constructing the receiver operating characteristic (ROC) curve to assess the diagnostic accuracy of the biomarker. The method try to estimate a continuous distribution in a diseased or nondiseased population when only group-based test results on the disease status are available. In that individual disease statuses are not observed and testing results are often subject to misclassification, with further complication that the misclassification may be differential as the group size and the number of the diseased individuals in the group vary. The reference paper is: "Nonparametric Estimation of Distributions and Diagnostic Accuracy Based on Group-Tested Results with Differential Misclassification". 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
